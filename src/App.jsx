@@ -5,7 +5,7 @@ import "./index.css";
 import { Widget } from "./components/Widget";
 
 const App = () => (
-  <div className="container">
+  <div className="container" id="floating_widget_b">
     <Widget></Widget>
   </div>
 );
