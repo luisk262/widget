@@ -44,7 +44,7 @@ module.exports = {
       name: "floatingWidget",
       filename: "floatingWidgetReact.js",
       remotes: {
-        floatingWidget:"floatingWidget@http://localhost:8081/floatingWidgetReact.js"
+        floatingWidget:"floatingWidget@http://localhost:8080/floatingWidgetReact.js"
       },
       exposes: {
         "./Widget": "./src/components/Widget",
