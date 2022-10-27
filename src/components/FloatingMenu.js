@@ -19,42 +19,35 @@ const customStyles = {
     },
 };
 
-function FloatingMenu(props) {
+function FloatingMenu({data}) {
+    console.log("pro[ps float",data)
     const [type, setType] = useState('');
-    const [showContact, setContact] = useState(false);
-    const [showPhone, setPhone] = useState(false);
-    const [showWhatsapp, setWhatsapp] = useState(false);
-
     const [modalIsOpen, setIsOpen] = React.useState(false);
-
     function openModal(modalType) {
         setIsOpen(true);
         setType(modalType)
     }
 
     function afterOpenModal() {
-        switch (type) {
-            case 'reservation':
-                console.log("reserva cargada", type)
-                break;
-            default:
-                console.log("default")
-        }
+        
     }
 
     function closeModal() {
         setIsOpen(false);
         setType('')
     }
+   
 
 
     return (
         <div id='floating_nav'>
-            <a id='reservation' onClick={() => { openModal('reservation') }}> <span>Reservar</span> <img src={calendar} /></a>
+            <a  id="register" onClick={() => { openModal('reservation') }}> <span>Reservar</span> <img src={calendar} /></a>
             <a id='contact' onClick={() => { openModal('contact') }}><span>Contáctanos</span> <img src={contact} /></a>
             <a id='phone' onClick={() => { openModal('phone') }}><span>Teléfono</span><img src={phone} /></a>
             <a id='whatsapp' onClick={() => { openModal('whatsapp') }}><span>Whatsapp</span><img src={wp} /></a>
-            <Modal
+            <div id="bewe-widget-container"></div>
+            
+            {/* <Modal
                 isOpen={modalIsOpen}
                 onAfterOpen={afterOpenModal}
                 onRequestClose={closeModal}
@@ -62,9 +55,11 @@ function FloatingMenu(props) {
                 contentLabel="Example Modal"
             >
                 <button onClick={closeModal}>X</button>
-                {type === 'reservation' && <CalendarWidget />}
-                {type === 'phone' && <PhoneWidget />}
-            </Modal>
+                <h1>hola widget</h1>
+                
+                 {type === 'reservation' && <CalendarWidget centerId={data.centerId} />}
+                {type === 'phone' && <PhoneWidget centerId={data.centerId}/>} 
+            </Modal> */}
 
         </div>
     );
