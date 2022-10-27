@@ -1,70 +1,80 @@
+/* ./src/index.css */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+.text-2xs {
+    font-size: 0.5rem;
+    line-height: 0.75rem;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.container {
-  font-size: 3rem;
-  margin: auto;
-  max-width: 800px;
-  margin-top: 20px;
-}
-#floating_nav
-{
-    position:fixed !important;
-    right:0 !important;
-    align-items:center !important;
-    z-index:100 !important;
-}
-
-#floating_nav  >a
-{
-    position:absolute !important;
-    right:10px !important;
-    transition:0.5s !important;
-    padding:15px !important;
-    width:20px !important;
-    height:20px !important;
-    line-height:14px !important;
-    text-decoration:none !important;
-    font-size:0.6em !important;
-    text-align:right !important;
-    color:white !important;
-    border-radius:25px !important;
-    background-color:#AA8371 !important;
-    
-}
-#floating_nav >a > span {
-    visibility:hidden !important;
-    position:absolute !important;
-    opacity:0 !important;
-    transition:opacity 0.5s linear !important;
-    }
-
-#floating_nav >a > img {
-    width:20px;
-}
-    
-#floating_nav >a:hover>span{
-    visibility:visible !important;
-    position:absolute !important;
-    display:flex !important;
-    color:black !important;
-    opacity:0.7 !important;
-}
-#floating_nav a:hover {
-    width:200px !important;
-    border-radius:26px 26px 26px 26px !important;
-}
-
-#floating_nav > #reservation{
-    top:25px !important;
-}
-#floating_nav > #contact{
-    top:80px !important;
-}
-#floating_nav > #phone{
-    top:135px !important;
-}
-#floating_nav > #whatsapp{
-    top:190px !important;
-}
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .container {
+    font-size: 3rem;
+    margin: auto;
+    max-width: 800px;
+    margin-top: 20px;
+  }
+  #floating_nav
+  {
+      position:fixed !important;
+      right:0 !important;
+      align-items:center !important;
+      z-index:100 !important;
+  }
+  
+  #floating_nav  >a
+  {
+      position:absolute !important;
+      right:10px !important;
+      transition:0.5s !important;
+      padding:15px !important;
+      width:20px !important;
+      height:20px !important;
+      line-height:14px !important;
+      text-decoration:none !important;
+      font-size:0.6em !important;
+      text-align:right !important;
+      color:white !important;
+      border-radius:25px !important;
+      background-color:#AA8371 !important;
+      
+  }
+  #floating_nav >a > span {
+      visibility:hidden !important;
+      position:absolute !important;
+      opacity:0 !important;
+      transition:opacity 0.5s linear !important;
+      }
+  
+  #floating_nav >a > img {
+      width:20px;
+  }
+      
+  #floating_nav >a:hover>span{
+      visibility:visible !important;
+      position:absolute !important;
+      display:flex !important;
+      color:black !important;
+      opacity:0.7 !important;
+  }
+  #floating_nav a:hover {
+      width:200px !important;
+      border-radius:26px 26px 26px 26px !important;
+  }
+  
+  #floating_nav > #reservation{
+      top:25px !important;
+  }
+  #floating_nav > #contact{
+      top:80px !important;
+  }
+  #floating_nav > #phone{
+      top:135px !important;
+  }
+  #floating_nav > #whatsapp{
+      top:190px !important;
+  }
