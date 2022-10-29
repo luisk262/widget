@@ -12,7 +12,7 @@ function FloatingMenu({data}) {
     return (
         <div id='floating_nav'>
             <a  id="calendar" > <span>Reservar</span> <img src={calendar} /></a>
-            <a id='contact' ><span>Contáctanos</span> <img src={contact} /></a>
+            <a id='contact' ><span>Contáctanos</span> <img style={{height: "20px"}} src={contact} /></a>
             <a id='phone'><span>Teléfono</span><img src={phone} /></a>
             <a id='whatsapp' ><span>Whatsapp</span><img src={wp} /></a>
             <div id="bewe-widget-container"></div>
