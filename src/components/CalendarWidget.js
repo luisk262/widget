@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
 
 function CalendarWidget(props) {
-    console.log(props)
     useEffect(()=>{
         const script = document.createElement("script");
-        script.innerHTML = `BW.on('load').init('#bewe-widget-container', {center: ${props.centerId}, path: 'register', insideHtml: true})`
+        script.innerHTML = `BW.on('click', '#calendar').init('#bewe-widget-container', {center: '${props.centerId}'})`
         script.async = true;
         script.onload = () => scriptLoaded();
         document.body.appendChild(script);
