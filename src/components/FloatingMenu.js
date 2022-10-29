@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import CalendarWidget from "./CalendarWidget"
+import LeadWidget from './LeadWidget'
 
-import calendar from "./calendar.svg"
-import CalendarWidget from './CalendarWidget';
-import contact from "./contact.svg"
-import LeadWidget from './LeadWidget';
-import phone from "./phone.svg"
-
-import wp from "./wp.svg"
+import calendar from "../assets/calendar.svg"
+import contact from "../assets/contact.svg"
+import phone from "../assets/phone.svg"
+import wp from "../assets/wp.svg"
 
 function FloatingMenu({data}) {
     
@@ -18,6 +17,7 @@ function FloatingMenu({data}) {
             <a id='whatsapp' ><span>Whatsapp</span><img src={wp} /></a>
             <div id="bewe-widget-container"></div>
             <div id="bewe-widget-container-lead"></div>
+            
             <CalendarWidget centerId={data.centerId} />
             <LeadWidget centerId={data.centerId}/>
             

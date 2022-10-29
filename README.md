@@ -56,18 +56,7 @@ Here follows an example integration :
 
 ```html
 ...
-<div id="something-in-your-website">
-  <div class="nicoraynaud-finance-widget"
-       data-symbol="GME">
-  </div>
-</div>
-...
-...
-<div id="something-else-in-your-website">
-  <div class="nicoraynaud-finance-widget"
-       data-symbol="AMZN">
-  </div>
-</div>
+<div id="bw-wdg" data-widget="FLOATING" data-color="black" data-identifier="5b11ba9aee1d210c9c6f1c58" class="bw-widgets" style="width: 250px; margin: auto; margin-top: 20px"></div>
 <!-- /!\ Only add these two tags once per page -->
 <link href="https://cdn.somewhere/react-widget/index.css" rel="stylesheet"/>
 <script src="https://cdn.somewhere/react-widget/index.js"></script>
