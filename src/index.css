@@ -1,6 +1,6 @@
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font: normal normal 600 20px/24px Montserrat;
   }
   
   .container {
@@ -23,14 +23,14 @@ body {
       right:10px !important;
       transition:0.5s !important;
       padding:15px !important;
-      width:20px !important;
-      height:20px !important;
+      width:50px !important;
+      height:50px !important;
       line-height:14px !important;
       text-decoration:none !important;
       font-size:0.6em !important;
       text-align:right !important;
       color:white !important;
-      border-radius:25px !important;
+      border-radius:50px !important;
       background-color:#AA8371 !important;
       opacity: 0.7 !important;
       
