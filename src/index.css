@@ -22,7 +22,7 @@ body {
     margin: 0;
   }
   #floating_nav > .menu > .menu_item{
-    line-height: 50px;
+    line-height: 30px;
     list-style: none;
     text-align: right;
   }
@@ -30,13 +30,13 @@ body {
   #floating_nav  .menu > .menu_item> p> a
   {
       transition:0.5s !important;
-      padding:15px !important;
+      padding:10px !important;
       width:50px !important;
       height:50px !important;
       text-decoration:none !important;
       text-align:right !important;
       color:white !important;
-      border-radius:50px !important;
+      /* border-radius:50px !important; */
       background-color:#AA8371 !important;
       opacity: 0.7 !important;
       
