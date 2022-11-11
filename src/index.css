@@ -62,5 +62,5 @@ body {
   }
   #floating_nav .menu_item:hover {
       width:160px !important;
-      border-radius:26px 26px 26px 26px !important;
+      /* border-radius:26px 26px 26px 26px !important; */
   }
