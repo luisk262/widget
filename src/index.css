@@ -50,6 +50,7 @@ body {
   
   #floating_nav  .menu_item> p> a > img {
       width:20px;
+      vertical-align: baseline;
   }
       
   #floating_nav .menu_item > p > a:hover>span{
